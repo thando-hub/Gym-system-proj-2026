@@ -1,0 +1,124 @@
+[200~================================================================================
+GETTING STARTED - ITP2020 GYM MANAGEMENT SYSTEM
+================================================================================
+
+For all team members after installing Git Bash.
+
+--------------------------------------------------------------------------------
+STEP 1 - CONFIGURE GIT (one time only)
+--------------------------------------------------------------------------------
+
+git config --global user.name "Your Full Name"
+git config --global user.email "your-email@example.com"
+
+Verify:
+git config --global --list
+
+Use YOUR OWN details, not Lwandile's.
+
+--------------------------------------------------------------------------------
+STEP 2 - NAVIGATE TO WHERE YOU WANT THE PROJECT
+--------------------------------------------------------------------------------
+
+cd ~/Documents
+
+--------------------------------------------------------------------------------
+STEP 3 - CLONE THE REPO
+--------------------------------------------------------------------------------
+
+git clone https://github.com/FeloniusGru567/itp2020-gym-system.git
+
+If a popup appears asking to sign in, use YOUR OWN GitHub account.
+
+--------------------------------------------------------------------------------
+STEP 4 - GO INTO THE FOLDER
+--------------------------------------------------------------------------------
+
+cd itp2020-gym-system
+
+--------------------------------------------------------------------------------
+STEP 5 - SWITCH TO THE DEVELOP BRANCH
+--------------------------------------------------------------------------------
+
+git checkout develop
+
+The main branch is empty. All work is on develop.
+
+--------------------------------------------------------------------------------
+STEP 6 - VERIFY
+--------------------------------------------------------------------------------
+
+ls backend/
+
+Should show:
+GymManagement.API/  GymManagement.Core/  GymManagement.Infrastructure/  README.md
+
+If you see GymCRUD/, delete it:
+rm -rf backend/GymCRUD
+rm -f backend/GymCRUD.sln
+rm -f database/GymDatabaseScript.sql
+
+--------------------------------------------------------------------------------
+STEP 7 - SET UP THE BACKEND DATABASE
+--------------------------------------------------------------------------------
+
+cd backend/GymManagement.API
+dotnet ef database update --project ../GymManagement.Infrastructure --startup-project .
+cd ../..
+
+--------------------------------------------------------------------------------
+STEP 8 - SET UP THE FRONTEND
+--------------------------------------------------------------------------------
+
+cd frontend
+npm install
+cd ..
+
+--------------------------------------------------------------------------------
+STEP 9 - RUN EVERYTHING
+--------------------------------------------------------------------------------
+
+Backend (in Visual Studio):
+- Open GymManagement.slnx
+- Press F5
+- Wait for "Now listening on: http://localhost:5049"
+
+Frontend (in Git Bash):
+cd frontend
+npm start
+Browser opens to http://localhost:3000
+
+--------------------------------------------------------------------------------
+STEP 10 - TEST LOGIN
+--------------------------------------------------------------------------------
+
+Email:    admin@gym.local
+Password: Admin123
+
+--------------------------------------------------------------------------------
+STEP 11 - CREATE YOUR BRANCH
+--------------------------------------------------------------------------------
+
+git checkout develop
+git pull
+git checkout -b feature/your-part
+
+Replace your-part with:
+- feature/members-trainers   (Ayahluma)
+- feature/programmes         (Ntando)
+- feature/workouts           (Thando)
+- feature/dashboards         (Lebo)
+
+--------------------------------------------------------------------------------
+STEP 12 - PUSH YOUR WORK
+--------------------------------------------------------------------------------
+
+git add .
+git commit -m "describe what you did"
+git push -u origin feature/your-part
+
+Then create a Pull Request on GitHub from your branch into develop.
+
+================================================================================
+END OF GUIDE
+================================================================================~

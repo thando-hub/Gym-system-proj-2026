@@ -1,0 +1,102 @@
+/* ---------- Global Fonts & Base ---------- */
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #FFE5B4;   /* Peach background */
+    color: #001f3f;              /* Navy text */
+    margin: 0;
+}
+
+/* ---------- Headings ---------- */
+h1, h2, h3, h4, h5 {
+    font-weight: 600;
+    color: #001f3f;              /* Dark navy */
+}
+
+/* ---------- Buttons ---------- */
+.btn-primary {
+    background-color: #001f3f;
+    border-color: #001f3f;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #003366;
+    border-color: #003366;
+}
+
+.btn-success {
+    background-color: #00509e;
+    border-color: #00509e;
+    font-weight: 600;
+}
+
+.btn-success:hover {
+    background-color: #003d7a;
+    border-color: #003d7a;
+}
+
+/* ---------- Cards ---------- */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #FFF2D9;   /* Very light peach cards */
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+/* ---------- Tables ---------- */
+.table {
+    background-color: #FFF2D9;   /* Very light peach (not white) */
+    border-radius: 10px;
+    overflow: hidden;
+    color: #001f3f;
+}
+
+.table thead {
+    background-color: #ffb380a4;   /* Darker peach for the header row */
+    color: #001f3f;              /* Navy text in header */
+    font-weight: 700;
+}
+
+.table tbody tr {
+    background-color: #fff2d9d6;
+}
+
+.table tbody tr:hover {
+    background-color: #7c5213;   /* Slightly darker peach on hover */
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+    background-color: #001f3f !important;   /* Dark navy */
+    font-weight: 700;                        /* Bold text */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar .navbar-text {
+    color: #f3ba50e7 !important;              /* Peach text on navy navbar */
+    font-weight: 700;
+}
+
+.navbar .nav-link:hover {
+    color: #FFB380 !important;              /* Lighter peach on hover */
+}
+
+.navbar .btn-outline-light {
+    color: #FFE5B4;
+    border-color: #FFE5B4;
+}
+
+.navbar .btn-outline-light:hover {
+    background-color: #FFE5B4;
+    color: #001f3f;
+}

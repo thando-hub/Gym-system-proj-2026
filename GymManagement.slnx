@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/backend/">
+    <Project Path="backend/GymManagement.API/GymManagement.API.csproj" />
+    <Project Path="backend/GymManagement.Core/GymManagement.Core.csproj" />
+    <Project Path="backend/GymManagement.Infrastructure/GymManagement.Infrastructure.csproj" />
+  </Folder>
+</Solution>
