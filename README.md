@@ -19,12 +19,18 @@ Full-stack gym management system for FitCore Gym — ITP2020 Assignment 2 (Group
 - `develop` — integration branch
 - `feature/*` — individual features
 
-## Team
+## Project Team
+This project was developed as a collaborative group effort for ITP2020. All team members contributed equally to the design, development, and implementation of this system.
+
+**Team Members:**
 - Lwandile Mbatha (FeloniusGru567)
 - Ayahluma21
 - Ntandoyenkosi Mfeka (NMfeka2)
 - thando-hub
-- Lebo
+- Lebo07
+
+**Important Notice:**
+This is a group project. All code, documentation, and design decisions were made collaboratively. The commit history and GitHub contribution graph reflect the collective effort of all team members listed above.
 
 ## Due Date
 12 October 2026
